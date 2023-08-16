@@ -1,0 +1,169 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navcontainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #005792;
+  color: white;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 20px;
+  overflow: hidden;
+  height: 6.5625rem;
+  position: sticky;
+}
+
+.headingcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgdiv {
+  width: 35%;
+}
+
+.headingcontainer > li {
+  font-family: Arial;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbar > .navcontainer > .headingcontainer > svg {
+  display: none;
+}
+
+.navbar > .navcontainer > .headingcontainer > li > a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.navbar > .navcontainer > .headingcontainer > li > .underline {
+  width: 2.875rem;
+  height: 0.4375rem;
+  border-radius: 0.5625rem;
+}
+
+.navbar > .navcontainer > .headingcontainer > li > a:hover {
+  color: #53cde2;
+}
+
+.navbar > .navcontainer > .headingcontainer > .active > a {
+  color: #53cde2;
+}
+
+.navbar > .navcontainer > .headingcontainer > .active > .underline {
+  background: #53cde2;
+}
+
+.navbar > .navcontainer > svg {
+  display: none;
+  margin: 0;
+  font-size: 3rem;
+}
+
+.headingcontaineropen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headingcontaineropen > li {
+  font-family: Arial;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbar > .navcontainer > .headingcontaineropen > li > a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.navbar > .navcontainer > .headingcontaineropen > li > .underline {
+  width: 2.875rem;
+  height: 0.4375rem;
+  border-radius: 0.5625rem;
+}
+
+.navbar > .navcontainer > .headingcontaineropen > li > a:hover {
+  color: #53cde2;
+}
+
+.navbar > .navcontainer > .headingcontaineropen > .active > a {
+  color: #53cde2;
+}
+
+.navbar > .navcontainer > .headingcontaineropen > .active > .underline {
+  background: #53cde2;
+}
+
+@media only screen and (max-width: 1176px) {
+  .navbar > .navcontainer > .headingcontainer > svg {
+    font-size: 3rem;
+    display: flex;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+
+  .navbar > .navcontainer > svg {
+    display: flex;
+  }
+  .navbar > .navcontainer > .headingcontainer > li {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .headingcontainer {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(100px);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    gap: 1.5rem;
+  }
+
+  .headingcontaineropen {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar > .navcontainer {
+    height: 5.5625rem;
+  }
+  .navbar > .navcontainer > svg {
+    font-size: 2.2rem;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .navbar > .navcontainer > .imgdiv > img {
+    width: 15rem;
+  }
+}
